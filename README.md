@@ -1,4 +1,4 @@
-# fastapi-onec2-docker
+## Deploying a Dockerized Fastapi application on EC2 instance 
 Steps to deploy a fastapi on EC2 using docker
 1.	Install Git and clone the repo of the fastapi application
 2.	Install Docker
