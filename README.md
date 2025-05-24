@@ -9,15 +9,15 @@ Steps to deploy a fastapi on EC2 using docker
 
 ##### Commands ################################
 
-$ sudo yum install git -y
-$ git clone https://github.com/SaajidPasha10/fastapi-on-ec2-docker.git
-$ sudo yum install docker -y
-$ docker -v # Displays the installed Docker version, confirming that Docker is correctly installed and accessible.
-$ sudo systemctl start docker # Starts the Docker service on your system, enabling Docker to run containers. This command requires superuser (sudo) privileges.
-$ sudo systemctl status docker # Shows the current status of the Docker service, indicating whether it's active, inactive, or failed.
-$ docker ps # Lists all currently running Docker containers, showing details like container
-$ docker ps -a # Lists all containers on the system, including those that are stopped. The `-a` flag stands for `--all`.
-$ docker build -t app  # Builds a Docker image from a Dockerfile located in the current directory (`.`). The `-t` flag tags the image with the name `app`.
-$docker run -d  --name fastapi-on-ec2-app -p 8000:80 app
+1.	$ sudo yum install git -y
+2.	$ git clone https://github.com/SaajidPasha10/fastapi-on-ec2-docker.git
+3.	$ sudo yum install docker -y
+4.	$ docker -v # Displays the installed Docker version, confirming that Docker is correctly installed and accessible.
+5.	$ sudo systemctl start docker # Starts the Docker service on your system, enabling Docker to run containers. This command requires superuser (sudo) privileges.
+6.	$ sudo systemctl status docker # Shows the current status of the Docker service, indicating whether it's active, inactive, or failed.
+7.	$ docker ps # Lists all currently running Docker containers, showing details like container
+8.	$ docker ps -a # Lists all containers on the system, including those that are stopped. The `-a` flag stands for `--all`.
+9.	$ docker build -t app  # Builds a Docker image from a Dockerfile located in the current directory (`.`). The `-t` flag tags the image with the name `app`.
+10.	$docker run -d  --name fastapi-on-ec2-app -p 8000:80 app
 Now access the public IP : http://<publicip>:8000/
 
