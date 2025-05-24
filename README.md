@@ -8,6 +8,7 @@ Steps to deploy a fastapi on EC2 using docker
 6.	Access it
 
 ##### Commands ################################
+
 $ sudo yum install git -y
 $ git clone https://github.com/SaajidPasha10/fastapi-on-ec2-docker.git
 $ sudo yum install docker -y
